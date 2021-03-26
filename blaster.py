@@ -32,3 +32,17 @@ receivervar = (input("\nEnter target phone number: "))
 subject = (input("\nWhat's the message: "))
 server = (input("\nSMTP server address - Blank for localhost: "))
 count = (input("\nNumber of messages to send: "))
+
+carrierdict = {
+    "1": "txt.att.net",
+    "2": "tmomail.net",
+    "3": "vtext.com",
+    "4": "messaging.sprintpcs.com",
+    "5": "vtext.com",
+    "6": "vmobl.com",
+    "7": "mmst5.tracfone.com"
+}
+
+receiver = receivervar + "@" + carrierdict[carriervar]
+
+print(receiver)
