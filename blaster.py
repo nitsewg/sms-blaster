@@ -39,7 +39,7 @@ carrierdict = {
     "1": "txt.att.net",
     "2": "tmomail.net",
     "3": "vtext.com",
-    "4": "messaging.sprintpcs.com",
+    "4": "pm.sprint.com",
     "5": "vtext.com",
     "6": "vmobl.com",
     "7": "mmst5.tracfone.com",
