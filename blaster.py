@@ -8,6 +8,7 @@ def blast(sender,receiver,message,count,server):
     while x < count:
         smtpObj.sendmail(sender,receiver,message)
         x += 1
+        time.sleep(.5)
 
 
 carrierlist = [
@@ -29,9 +30,9 @@ for i in carrierlist:
 carriervar = (input("\nSelect phone carrier: "))
 sender = (input("\nPlease enter from address: "))
 receivervar = (input("\nEnter target phone number: "))
-subject = (input("\nWhat's the message: "))
+message = (input("\nWhat's the message: "))
 server = (input("\nSMTP server address - Blank for localhost: "))
-count = (input("\nNumber of messages to send: "))
+count = int((input("\nNumber of messages to send: ")))
 
 carrierdict = {
     "1": "txt.att.net",
@@ -45,4 +46,7 @@ carrierdict = {
 
 receiver = receivervar + "@" + carrierdict[carriervar]
 
-print(receiver)
+if server == '':
+    server = 'localhost'
+    
+blast(sender, receiver, message, count, server)
