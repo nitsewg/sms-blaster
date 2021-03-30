@@ -18,7 +18,8 @@ carrierlist = [
     "Sprint", 
     "Xfinity", 
     "Virgin", 
-    "Tracfone"
+    "Tracfone",
+    "Google Fi"
     ]
 
 x = 1
@@ -41,7 +42,8 @@ carrierdict = {
     "4": "messaging.sprintpcs.com",
     "5": "vtext.com",
     "6": "vmobl.com",
-    "7": "mmst5.tracfone.com"
+    "7": "mmst5.tracfone.com",
+    "8": "msg.fi.google.com"
 }
 
 receivers = receivervar + "@" + carrierdict[carriervar]
