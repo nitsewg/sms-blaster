@@ -6,7 +6,7 @@ def blast(sender,receivers,body,count,server):
     
     x = 1
     while x < count:
-        smtpObj.sendmail(sender,receivers,body)
+        smtpObj.sendmail(sender, receivers, body)
         x += 1
         time.sleep(.5)
 
